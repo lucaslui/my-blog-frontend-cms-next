@@ -1,0 +1,14 @@
+@import '../styles/colors.scss';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    flex-grow: 1;
+
+    background-color: $background-secondary-color;
+
+    padding: 24px;
+}

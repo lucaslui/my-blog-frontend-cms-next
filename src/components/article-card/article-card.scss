@@ -1,0 +1,44 @@
+@import '../../styles/colors.scss';
+@import '../../styles/spaces.scss';
+
+
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $disabled-color;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 $focus-color;
+    transform: translatey(-8px) !important;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-content {
+    background-color: $background-button-color;
+    color: $primary-color;
+    flex-grow: 1;
+    padding: 20px;
+
+    h4 {
+      margin-bottom: 12px;
+    }
+  }
+
+  .article-foot {
+    background-color: $background-color;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  i {
+    padding-right: 8px;
+  }
+}

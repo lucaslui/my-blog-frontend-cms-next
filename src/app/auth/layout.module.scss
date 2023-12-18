@@ -1,0 +1,12 @@
+@import '../../styles/colors.scss';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+
+    background-color: $background-secondary-color;
+}

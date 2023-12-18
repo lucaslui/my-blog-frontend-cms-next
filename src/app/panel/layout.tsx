@@ -2,6 +2,10 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 
 import '../styles/globals.scss'
+import styles from './layout.module.scss'
+
+import Header from '@/components/header/header'
+import Footer from '@/components/footer/footer'
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -18,14 +22,13 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <html lang="en">
-            <head>
-                <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet" />
-            </head>
-            <body className={roboto.className}>
+        <>
+            <Header />
+            <main className={styles.main}>
                 {children}
-            </body>
-        </html>
+            </main>
+            <Footer />
+        </>
     )
 }
 
